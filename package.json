@@ -5,7 +5,9 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "db:generate": "npx prisma generate",
+    "db:push": "npx prisma db push"
   },
   "keywords": [
     "backend",
@@ -15,9 +17,12 @@
   "author": "Max",
   "license": "MIT",
   "devDependencies": {
+    "nodemon": "^2.0.22",
     "prisma": "^4.12.0"
   },
   "dependencies": {
-    "@prisma/client": "^4.12.0"
+    "@prisma/client": "^4.12.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
   }
 }
