@@ -14,4 +14,10 @@ export default class User{
             }
         })
     }
+
+    async userObtain(email){
+        return await this.#model.findUnique({
+            where: email
+        })
+    }
 }
