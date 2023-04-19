@@ -3,15 +3,21 @@ import { PrismaClient } from "@prisma/client"
 export default class User{
     #model = new PrismaClient()["user"]
 
-    async userCreate(user,post){
+    async userCreate(user,postId){
         return await this.#model.create({
             data:{
                 email : user.email,
                 role : user.role,
                 posts:{
-                    create:{ ...post }
+                    connect:postId
                 }
             }
+        })
+    }
+
+    async userFind(email){
+        return await this.#model.findUnique({
+            where: email
         })
     }
 }
