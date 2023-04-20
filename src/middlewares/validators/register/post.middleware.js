@@ -1,5 +1,4 @@
 import Joi from 'joi'
-import ErrorController from '../../../controllers/Error.controller.js'
 
 const schema = Joi.object({
     user: Joi.object({
