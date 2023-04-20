@@ -14,9 +14,6 @@ export default class UserController{
 
     async getUser(email){
         const user = await this.#model.userFind(email)
-        if(!user){
-            throw new ErrorController('NOT_FOUND','Usuario no existente')
-        }
         return user
     }
 }

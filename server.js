@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import express from 'express'
 import register from './src/services/register.service.js'
-import errorHandler from './src/services/error.service.js'
+import errorHandler from './src/middlewares/error.middleware.js'
 
 dotenv.config()
 
