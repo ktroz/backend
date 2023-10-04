@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "description": "e-commerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ktroz/backend.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Max Bernardo Cruz Schouten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ktroz/backend/issues"
+  },
+  "homepage": "https://github.com/ktroz/backend#readme",
+  "dependencies": {
+    "@prisma/client": "^5.4.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "prisma": "^5.4.0"
+  }
+}
