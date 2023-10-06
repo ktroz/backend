@@ -5,4 +5,7 @@ export default class UserController {
     createUser(user){
         return this.#model.createUser(user)
     }
+    findUser(email){
+        return this.#model.findUser(email)
+    }
 }

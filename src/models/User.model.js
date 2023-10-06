@@ -6,6 +6,10 @@ export default class UserModel {
         this.#client = new PrismaClient()["user"]
     }
     async createUser(user){
-        await this.#client.create({data: user})
+        return await this.#client.create({data: user})
+    }
+    
+    async findUser(email){
+        return await this.#client.findUnique({where: email})
     }
 }
